@@ -8,7 +8,7 @@ I'm developing a consumer backup product for photos, videos and selected files, 
 
 The first real Pixel USB → encrypted backup → restore test has passed for one original. Next are interactive testing, disconnect recovery and larger selections, followed by an Android companion for Wi-Fi transfers.
 
-Product source is private. A public engineering showcase is being prepared with architecture, screenshots, test scope and development notes.
+Product source is private. Explore the [public engineering showcase](https://github.com/RutuK2005/phone-backup-showcase) for architecture, screenshots, test scope and development notes.
 
 ### What I'm working with
 

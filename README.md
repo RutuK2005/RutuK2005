@@ -2,11 +2,11 @@
 
 B.Tech Data Science student at D Y Patil International University (graduating 2027). I build **data pipelines, API/webhook automations and LLM-powered workflows** in Python, and I've shipped them for real clients through the automation agency I co-founded.
 
-- 🛠️ **Co-Founder & AI Automation Architect, AutomateIQ** (Jan 2025 – May 2026): n8n workflows, REST API integrations and LLMs wired into client business systems
-- 🏥 **Automation & Growth Consultant, freelance clinic work** (Feb 2026 – present): lead-generation automation with Python, n8n and webhooks
-- 🏆 **Smart India Hackathon 2025 winner**: driving simulator with real-time telemetry over PySerial
-- 🛰️ **ISRO hackathon**: satellite imagery preprocessing for a super-resolution model
-- 👨‍🏫 Technical Mentor at Code Decode Coding Club, where I teach Python workshops
+-  Co-Founder & AI Automation Architect, AutomateIQ (Jan 2025 – May 2026): n8n workflows, REST API integrations and LLMs wired into client business systems
+-  Automation & Growth Consultant, freelance clinic work (Feb 2026 – present): lead-generation automation with Python, n8n and webhooks
+-  Smart India Hackathon 2025 int round winner: driving simulator with real-time telemetry over PySerial
+- ISRO hackathon: satellite imagery preprocessing for a super-resolution model
+-  Technical Mentor at Code Decode Coding Club, where I teach Python workshops
 
 ## Featured projects
 

@@ -1,38 +1,24 @@
-# Hi, I'm Rutuparn Kulkarni
+# Rutuparn Kulkarni
 
-B.Tech Data Science student at D Y Patil International University (graduating 2027). I build **data pipelines, API/webhook automations and LLM-powered workflows** in Python, and I've shipped them for real clients through the automation agency I co-founded.
+I'm a Data Science student at DY Patil International University, graduating in 2027. Most of what I build is Python that sits between systems: pulling data out of APIs, cleaning it up, and sending it somewhere useful.
 
--  Co-Founder & AI Automation Architect, AutomateIQ (Jan 2025 – May 2026): n8n workflows, REST API integrations and LLMs wired into client business systems
--  Automation & Growth Consultant, freelance clinic work (Feb 2026 – present): lead-generation automation with Python, n8n and webhooks
--  Smart India Hackathon 2025 int round winner: driving simulator with real-time telemetry over PySerial
-- ISRO hackathon: satellite imagery preprocessing for a super-resolution model
--  Technical Mentor at Code Decode Coding Club, where I teach Python workshops
+Since early 2025 I've been doing that for real clients. I co-founded AutomateIQ, a small automation agency, where I built n8n workflows and API integrations and plugged LLMs into client systems. Since February 2026 I've also been freelancing for clinics, automating how they collect and follow up on leads.
 
-## Featured projects
+In college hackathons, our team's driving simulator won the internal round of Smart India Hackathon 2025. I worked on the Python side that read telemetry off the rig over serial. At an ISRO hackathon I prepared satellite images for a super-resolution model.
 
-| Project | What it does | Stack |
-|---|---|---|
-| [**lead-router**](https://github.com/RutuK2005/lead-router) | Webhook service that verifies, cleans, de-duplicates and LLM-scores incoming leads, then delivers them reliably to CRMs / n8n using an outbox with retries | FastAPI · Pydantic · Claude API · SQLite · httpx · n8n · Docker |
-| [**india-air-quality-etl**](https://github.com/RutuK2005/india-air-quality-etl) | Incremental ETL of weather + air-quality data for Indian cities into a DuckDB warehouse (bronze/silver/gold), with data-quality gates and Power BI exports | Python · Pandas · Requests · DuckDB · SQL · GitHub Actions |
-| [**sim-telemetry**](https://github.com/RutuK2005/sim-telemetry) | Real-time telemetry pipeline for a serial-connected driving-simulator rig: binary framing with CRC, resync, drop detection and a live WebSocket dashboard | Python · PySerial · FastAPI · WebSockets · Pandas |
-| [**satellite-tile-prep**](https://github.com/RutuK2005/satellite-tile-prep) | Turns large satellite scenes into super-resolution training data: overlapping tiles, percentile normalisation, LR/HR pairs and seamless stitching | Python · OpenCV · NumPy · Pandas · multiprocessing |
+### Projects
 
-Every repo has tests, CI, and a `docs/walkthrough.md` explaining the design.
+- [lead-router](https://github.com/RutuK2005/lead-router): receives leads from ad and website forms, checks the webhook signature, cleans up phone numbers, drops duplicates, scores each lead with Claude (or simple rules if there's no API key) and forwards it to a CRM or n8n. It's a tidier version of the kind of thing I build for clients.
+- [india-air-quality-etl](https://github.com/RutuK2005/india-air-quality-etl): pulls hourly weather and air-quality data for 8 Indian cities from Open-Meteo into DuckDB. Re-running it doesn't duplicate rows, and it only fetches days it hasn't loaded yet.
+- [sim-telemetry](https://github.com/RutuK2005/sim-telemetry): a standalone rebuild of the telemetry part of the SIH simulator. Binary packets with a CRC, a parser that recovers from garbage bytes, and a live dashboard. There's a simulated car, so you can run it without the hardware.
+- [satellite-tile-prep](https://github.com/RutuK2005/satellite-tile-prep): cuts big satellite images into overlapping tiles, normalises them and makes low-res/high-res pairs for training super-resolution models. It can stitch the tiles back together too.
 
-## Toolbox
+On the side I'm building an Android-to-Windows photo backup app in C#/.NET. The code is private, but there's a [showcase repo](https://github.com/RutuK2005/phone-backup-showcase).
 
-**Languages & libraries:** Python, Pandas, NumPy, Requests, PySerial, OpenCV, FastAPI, Pydantic, SQL<br>
-**Data:** ETL / ELT pipelines, DuckDB, SQLite, data-quality checks, Spark (coursework), Power BI<br>
-**Automation & AI:** n8n, REST APIs, webhooks, LLM integration (structured outputs), Docker, GitHub Actions
+### What I use
 
-**Certifications:** Coursera, *Engineering Data Ecosystems: Pipelines, ETL, Spark* · *Data Storytelling with Power BI*
+Python (pandas, NumPy, requests, FastAPI, OpenCV, PySerial), SQL, DuckDB, n8n, REST APIs and webhooks, Docker, GitHub Actions. I've done Coursera courses on data pipelines/Spark and Power BI.
 
-## Also building
-
-An Android → Windows photo/video backup app (C# / .NET + native Android). The source is private; the [engineering showcase](https://github.com/RutuK2005/phone-backup-showcase) covers its architecture and milestones.
-
-## Contact
+Outside of that I mentor at the Code Decode coding club (mostly teaching Python), mess around with electronics, and run marathons.
 
 [LinkedIn](https://www.linkedin.com/in/rutuparn-kulkarni-a994a4373)
-
-<sub>I use AI-assisted development tools and review, test and document everything I publish.</sub>

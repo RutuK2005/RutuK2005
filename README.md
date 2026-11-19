@@ -8,8 +8,8 @@ In college hackathons, our team's driving simulator won the internal round of Sm
 
 ### Projects
 
+- [delhi-bus-pulse](https://github.com/RutuK2005/delhi-bus-pulse): measures bus bunching in Delhi (you wait 25 minutes, then three buses come together) from three months of real tracking data, and predicts arrival times. On route 534 about 13.5% of arrivals are bunched, which roughly doubles the average wait, and the ETA model beats historical averages by 26% on a month it never saw. It also has a poller for Delhi's live GTFS-Realtime feed.
 - [lead-router](https://github.com/RutuK2005/lead-router): receives leads from ad and website forms, checks the webhook signature, cleans up phone numbers, drops duplicates, scores each lead with Claude (or simple rules if there's no API key) and forwards it to a CRM or n8n. It's a tidier version of the kind of thing I build for clients.
-- [india-air-quality-etl](https://github.com/RutuK2005/india-air-quality-etl): pulls hourly weather and air-quality data for 8 Indian cities from Open-Meteo into DuckDB. Re-running it doesn't duplicate rows, and it only fetches days it hasn't loaded yet.
 - [sim-telemetry](https://github.com/RutuK2005/sim-telemetry): a standalone rebuild of the telemetry part of the SIH simulator. Binary packets with a CRC, a parser that recovers from garbage bytes, and a live dashboard. There's a simulated car, so you can run it without the hardware.
 - [satellite-tile-prep](https://github.com/RutuK2005/satellite-tile-prep): cuts big satellite images into overlapping tiles, normalises them and makes low-res/high-res pairs for training super-resolution models. It can stitch the tiles back together too.
 
@@ -17,7 +17,7 @@ On the side I'm building an Android-to-Windows photo backup app in C#/.NET. The 
 
 ### What I use
 
-Python (pandas, NumPy, requests, FastAPI, OpenCV, PySerial), SQL, DuckDB, n8n, REST APIs and webhooks, Docker, GitHub Actions. I've done Coursera courses on data pipelines/Spark and Power BI.
+Python (pandas, NumPy, requests, FastAPI, OpenCV, PySerial), SQL, DuckDB, scikit-learn, n8n, REST APIs and webhooks, Docker, GitHub Actions. I've done Coursera courses on data pipelines/Spark and Power BI.
 
 Outside of that I mentor at the Code Decode coding club (mostly teaching Python), mess around with electronics, and run marathons.
 

@@ -8,16 +8,17 @@ In college hackathons, our team's driving simulator won the internal round of Sm
 
 ### Projects
 
-- [delhi-bus-pulse](https://github.com/RutuK2005/delhi-bus-pulse): measures bus bunching in Delhi (nothing for ages, then three buses of the same route together) from three months of real tracking data, and predicts arrival times. On route 534 about 13.5% of arrivals are bunched, which roughly doubles the average wait, and the ETA model beats historical averages by 26% on a month it never saw. It also has a poller for Delhi's live GTFS-Realtime feed.
-- [lead-router](https://github.com/RutuK2005/lead-router): receives leads from ad and website forms, checks the webhook signature, cleans up phone numbers, drops duplicates, scores each lead with Claude (or simple rules if there's no API key) and forwards it to a CRM or n8n. It's a tidier version of the kind of thing I build for clients.
 - [sim-telemetry](https://github.com/RutuK2005/sim-telemetry): a standalone rebuild of the telemetry part of the SIH simulator. Binary packets with a CRC, a parser that recovers from garbage bytes, and a live dashboard. There's a simulated car, so you can run it without the hardware.
+- [lead-router](https://github.com/RutuK2005/lead-router): receives leads from ad and website forms, checks the webhook signature, cleans up phone numbers, drops duplicates, scores each lead with Claude (or simple rules if there's no API key) and forwards it to a CRM or n8n. It's a tidier version of the kind of thing I build for clients.
+- [delhi-bus-reliability](https://github.com/RutuK2005/delhi-bus-reliability): measures bus bunching in Delhi (nothing for ages, then three buses of the same route together) from three months of real tracking data, and predicts arrival times. On route 534 about 13.5% of buses arrive bunched up behind the one in front, and the uneven spacing roughly doubles the average wait (12.3 minutes instead of 5.9). The ETA model's error is 26% lower than using historical medians, on a month it never saw. It also has a poller for Delhi's live GTFS-Realtime feed.
 - [satellite-tile-prep](https://github.com/RutuK2005/satellite-tile-prep): cuts big satellite images into overlapping tiles, normalises them and makes low-res/high-res pairs for training super-resolution models. It can stitch the tiles back together too.
+- [sanctions-screener](https://github.com/RutuK2005/sanctions-screener): checks a person's or company's name against the OFAC and UN sanctions lists and still catches spelling variants like "Mohammed" and "Muhammad". A likely match opens a case that an analyst clears, escalates or confirms, and every decision goes into an append-only audit log. Tested on 1,000 deliberately altered OFAC names and 1,000 made-up ones, it got 97.4% precision and 96.8% recall at the default threshold.
 
-On the side I'm building an Android-to-Windows photo backup app in C#/.NET. The code is private, but there's a [showcase repo](https://github.com/RutuK2005/phone-backup-showcase).
+On the side I'm building an Android-to-Windows photo backup app in C#/.NET. The code is private, but there's a [public repo](https://github.com/RutuK2005/phone-backup-showcase) with the architecture and progress notes.
 
 ### What I use
 
-Python (pandas, NumPy, requests, FastAPI, OpenCV, PySerial), SQL, DuckDB, scikit-learn, n8n, REST APIs and webhooks, Docker, GitHub Actions. I've done Coursera courses on data pipelines/Spark and Power BI.
+Python (pandas, NumPy, requests, FastAPI, OpenCV, PySerial), SQL (PostgreSQL, DuckDB), scikit-learn, n8n, REST APIs and webhooks, Docker, GitHub Actions. I've done Coursera courses on data pipelines/Spark and Power BI.
 
 Outside of that I mentor at the Code Decode coding club (mostly teaching Python), mess around with electronics, and run marathons.
 
